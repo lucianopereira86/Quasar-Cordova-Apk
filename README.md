@@ -47,15 +47,13 @@ Change to the apk release folder.
 ```batch
 cd "<ROOT-FOLDER>\src-cordova\platforms\android\app\build\outputs\apk\release\"
 ```
-To create a keystore, you have to inform the password and answer all the questions.
-
-I've called mine MY_KEYSTORE. 
+To create a keystore, you have to run the command below, inform the password twice and answer all the questions.
 
 JDK 1.8.0_171 is the version installed in my PC.
 ```batch
 "C:\Program Files\Java\jdk1.8.0_171\bin\keytool.exe" -genkey -v -keystore MY_KEYSTORE.keystore -alias MY_KEYSTORE -keyalg RSA -keysize 2048 -validity 20000
 ```
-- Finally, run this command, inform the keystore password and the apk will be signed.
+Finally, run this command, inform the keystore password and the apk will be signed.
 ```batch
 "C:\Program Files\Java\jdk1.8.0_171\bin\jarsigner.exe" -tsa http://timestamp.digicert.com -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore MY_KEYSTORE.keystore app-release-unsigned.apk MY_KEYSTORE
 ```
