@@ -8,7 +8,11 @@ Simple guide to create a signed apk from a Quasar app with Cordova.
 
 ### Run the following commands in the root folder of your app
 
-Install cordova dependencies
+Install the latest cordova release
+```batch
+npm install -g cordova
+```
+Install cordova dependencies in your app
 ```batch
 quasar mode add cordova
 ```
