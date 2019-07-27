@@ -47,7 +47,7 @@ Change to the apk release folder.
 ```batch
 cd "<ROOT-FOLDER>\src-cordova\platforms\android\app\build\outputs\apk\release\"
 ```
-To create a keystore, you have to run the command below, inform the password twice and answer all the questions.
+To create a keystore, you have to run the command below, inform the password and answer all the questions.
 
 JDK 1.8.0_171 is the version installed in my PC.
 ```batch
